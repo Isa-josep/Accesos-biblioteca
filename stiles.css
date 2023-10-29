@@ -87,3 +87,34 @@ input[type="submit"]:hover {
     font-weight: bold; 
     color: #333;
 }
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+.space {
+    padding: 10px;
+}
+
+h2 {
+    color: #333;
+}
