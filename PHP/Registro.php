@@ -29,7 +29,26 @@ if (isset($_POST["Registrar"])) {
     $consulta = "SELECT * FROM Alumnos";
     $result = mysqli_query($conexion, $consulta);
     if ($result) {
+        $totalHombres = 0;
+        $totalMujeres = 0;
+        $data = array(); // Almacena los datos para imprimir la tabla
+        
+        while ($row = mysqli_fetch_assoc($result)) {
+            if ($row['GENERO'] == "Hombre") {
+                $totalHombres++;
+            } elseif ($row['GENERO'] == "Mujer") {
+                $totalMujeres++;
+            }
+            $data[] = $row; // Almacena los datos para imprimir la tabla
+        }
+
+        // Calcular los porcentajes
+        $totalRegistros = count($data);
+        $porcentajeHombres = ($totalHombres / $totalRegistros) * 100;
+        $porcentajeMujeres = ($totalMujeres / $totalRegistros) * 100;
         echo "<h2>Usuarios Registrados:</h2>";
+        echo "Porcentaje de Hombres: " . number_format($porcentajeHombres, 2) . "%<br>";
+        echo "Porcentaje de Mujeres: " . number_format($porcentajeMujeres, 2) . "%<br>";
         echo "<table>
             <tr>
                 <th class='space'>No. de Control:</th>
@@ -39,7 +58,8 @@ if (isset($_POST["Registrar"])) {
                 <th class='space'>Género:</th>
                 <th class='space'>Fecha de Entrada:</th>
             </tr>";
-        while ($row = mysqli_fetch_assoc($result)) {
+        
+        foreach ($data as $row) {
             echo "<tr>
                 <td class='space'>{$row['NO_CONTROL']}</td>
                 <td class='space'>{$row['Nombre']}</td>
