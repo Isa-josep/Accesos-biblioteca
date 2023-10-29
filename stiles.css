@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+h1 {
+    color: #333;
+}
+form {
+    background-color: #fff;
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+
+}
+.inputN{
+    width: 95%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 7%,
+}
+.input {
+    width: 95%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 7%
+    
+}
+.selection{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 7%
+}
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;        
+}
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#genero option {
+    background-color: #f2f2f2;
+    color: #333;
+    height: 12px;
+    width: 20px;
+}
+.consultar-button {
+    background-color: #007bff; 
+    color: #fff; 
+    margin-right: 10px; 
+}
+
+.registrar-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.title{
+    font-size: 30px;
+    font-weight: bold; 
+    color: #333;
+}

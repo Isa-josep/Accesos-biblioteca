@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stiles.css">
+    <script src="Script.js"></script>
+    <title>Control de accesos</title>
+</head>
+<body>
+    <body>
+        <span class="title">Control de Accesos Biblioteca</span>
+        <form action="PHP/Registro.php" method="post" id="myForm">
+            <label for="no_control">No. de Control:</label>
+            <input type="number" class="inputN" id="no_control" name="no_control" autocomplete="off">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" class="input" name="nombre" autocomplete="off">
+            <label for="apellido_paterno">Apellido Paterno:</label>
+            <input type="text" id="apellido_paterno" class="input" name="apellido_paterno" autocomplete="off">
+            <label for="apellido_materno">Apellido Materno:</label>
+            <input type="text" id="apellido_materno" class="input" name="apellido_materno" autocomplete="off">
+            <label for="genero">Género:</label>
+            <select id="genero" name="genero" class="selection">
+                <option value="Hombre">Hombre</option>
+                <option value="Mujer">Mujer</option>
+            </select>
+            <input type="submit" id="Consultar" class="consultar-button" name="Consultar" value="Consultar">
+            <input type="submit" class="registrar-button" name="Registrar" value="Registrar" onclick="return validateRegistro()">
+        </form>
+    </body>
+</body>
+</html>
