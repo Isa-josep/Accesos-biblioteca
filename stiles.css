@@ -96,6 +96,7 @@ input[type="submit"]:hover {
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    text-decoration: none;
 }
 .title{
     font-size: 30px;
