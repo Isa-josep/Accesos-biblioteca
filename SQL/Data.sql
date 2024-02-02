@@ -8,3 +8,6 @@ CREATE TABLE Alumnos(
     GENERO TEXT NOT NULL,
     FECHA_ENTRADA DATETIME NOT NULL 
 );
+
+-- TODO: Query para eliminar la tabla Alumnos
+--! DELETE FROM Alumnos;

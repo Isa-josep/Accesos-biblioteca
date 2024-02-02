@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stiles.css">
-    <title>Control de accesos</title>
+    <script src="ScriptModificar.js"></script>
+    <title>Modificar Datos</title>
 </head>
 <body>
-    <span class="title">Control de Accesos Biblioteca</span>
-    <form action="PHP/Registro.php" method="post" id="myForm">
+    <span class="title">Modificar Datos</span>
+    <form action="PHP/Actualizar.php" method="post" id="modifyForm">
         <label for="no_control">No. de Control:</label>
         <input type="number" class="inputN" id="no_control" name="no_control" autocomplete="off">
         <label for="nombre">Nombre:</label>
@@ -22,10 +23,9 @@
             <option id="defaultOption" value="" selected disabled hidden>Seleccione una opción</option>
             <option value="Hombre">Hombre</option>
             <option value="Mujer">Mujer</option>
-        </select>
-        <input type="submit" id="Consultar" class="consultar-button" name="Consultar" value="Consultar">
-        <input type="submit" class="registrar-button" name="Registrar" value="Registrar" onclick="return validateRegistro()">
-        <a href="modificar.html" class="registrar-button">Modificar</a>
+        </select> 
+
+        <input type="submit" class="registrar-button" name="Actualizar" value="Actualizar" onclick="return validateModificacion()">
     </form>
 </body>
 </html>

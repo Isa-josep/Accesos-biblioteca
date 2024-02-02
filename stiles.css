@@ -7,7 +7,7 @@ h1 {
     color: #333;
 }
 form {
-    background-color: #fff;
+    background-color: #ffffff;
     max-width: 420px;
     margin: 0 auto;
     padding: 20px;
@@ -29,26 +29,41 @@ input[type=number]::-webkit-outer-spin-button {
     width: 95%;
     padding: 10px;
     margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    margin-bottom: 7%,
+    border: none;
+    background-color: #f1f1f1;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    outline: none;
 }
 .input {
     width: 95%;
     padding: 10px;
     margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    margin-bottom: 7%
-    
+    border: none;
+    background-color: #f1f1f1;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    outline: none;
 }
 .selection{
     width: 100%;
     padding: 10px;
     margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    margin-bottom: 7%
+    border: none;
+    background-color: #f1f1f1;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+    appearance: none;
+}
+.selection option {
+    border: none;
+    appearance: none;
+    padding: 0,30px,0,15px;
+    width: 100%;
+    color: white;
+    background-color: #2873ff;
+    font-size: 20px;
 }
 input[type="submit"] {
     background-color: #007bff;
@@ -71,7 +86,7 @@ input[type="submit"]:hover {
 .consultar-button {
     background-color: #007bff; 
     color: #fff; 
-    margin-right: 10px; 
+    /* margin-right: 10px;  */
 }
 
 .registrar-button {

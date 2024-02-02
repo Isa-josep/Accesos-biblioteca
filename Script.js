@@ -3,8 +3,9 @@ function validateRegistro() {
     var nombre = document.getElementById("nombre").value;
     var apellidoPaterno = document.getElementById("apellido_paterno").value;
     var apellidoMaterno = document.getElementById("apellido_materno").value;
-
-    if (noControl === "" || nombre === "" || apellidoPaterno === "" || apellidoMaterno === "") {
+    var gen= document.getElementById("genero").value;
+    //console.log("hola",gen);
+    if (noControl === "" || nombre === "" || apellidoPaterno === "" || apellidoMaterno === ""|| gen === "") {
         alert("Todos los campos son obligatorios para el registro.");
         return false;
     }

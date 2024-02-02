@@ -47,8 +47,8 @@ if (isset($_POST["Registrar"])) {
         $porcentajeHombres = ($totalHombres / $totalRegistros) * 100;
         $porcentajeMujeres = ($totalMujeres / $totalRegistros) * 100;
         echo "<h2>Usuarios Registrados:</h2>";
-        echo "Porcentaje de Hombres: " . number_format($porcentajeHombres, 2) . "%<br>";
-        echo "Porcentaje de Mujeres: " . number_format($porcentajeMujeres, 2) . "%<br>";
+        // echo "Porcentaje de Hombres: " . number_format($porcentajeHombres, 2) . "%<br>";
+        // echo "Porcentaje de Mujeres: " . number_format($porcentajeMujeres, 2) . "%<br>";
         echo "<table>
             <tr>
                 <th class='space'>No. de Control:</th>
